@@ -23,7 +23,7 @@ if(!require("metRictools")){
     install.packages("devtools")
   }
   print("Installing metric_tools...")
-  devtools::install_bitbucket("datarts/metrictools.git",force=T)
+  devtools::install_github("metricarts/metrictools",force=T)
   library(metRictools)
 }
 
