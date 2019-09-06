@@ -18,13 +18,13 @@ project_name = basename(path_src)
 
 # Basic Libraries Entel Framework -----------------------------------------
 
-if(!require("metRictools")){
+if(!require("dftools")){
   if( !"devtools" %in% rownames(installed.packages()) ){
     install.packages("devtools")
   }
-  print("Installing metric_tools...")
-  devtools::install_github("metricarts/metrictools",force=T)
-  library(metRictools)
+  print("Installing dftools...")
+  devtools::install_github("danielfm123/dftools",force=T)
+  library(dftools)
 }
 
 # Configuraci?n seg?n OS --------------------------------------------------
